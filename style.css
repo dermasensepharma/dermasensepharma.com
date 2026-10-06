@@ -1,0 +1,28 @@
+:root{--ink:#12303a;--teal:#0e6b6b;--mist:#eaf3f1;--paper:#fbfdfc;--coral:#d9644f;--line:#cfe0dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;line-height:1.15;margin:0 0 .5em;font-weight:500}
+h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{font-size:1.25rem}
+a{color:var(--teal)}p{max-width:68ch;margin:0 0 1em}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;background:rgba(251,253,252,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font:600 1.45rem Newsreader,serif;color:var(--ink);text-decoration:none}.logo span{color:var(--coral)}
+nav a{margin-left:24px;text-decoration:none;color:var(--ink);font-weight:500}
+nav a:hover,nav a.on{color:var(--teal);border-bottom:2px solid var(--coral)}
+.hero{background:var(--mist);padding:96px 0 84px}
+.hero p{font-size:1.15rem}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 26px;border-radius:4px;text-decoration:none;font-weight:600;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--ink)}
+section{padding:72px 0}section.alt{background:var(--mist)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:28px}
+.grid>div{border-top:3px solid var(--teal);padding-top:14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.ph{background:var(--line);aspect-ratio:4/3;display:grid;place-items:center;color:var(--teal);font-size:.9rem;border-radius:4px}
+form{display:grid;gap:14px;max-width:520px}
+input,textarea{font:inherit;padding:11px;border:1px solid var(--line);border-radius:4px;width:100%}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+footer{background:var(--ink);color:#d7e6e2;padding:48px 0 24px;font-size:.95rem}
+footer a{color:#fff}footer .grid{margin:0 0 24px}footer .grid>div{border-top:0;padding:0}
+.small{font-size:.85rem;opacity:.8}
+@media(max-width:760px){.split{grid-template-columns:1fr}nav a{margin-left:14px;font-size:.95rem}.logo{font-size:1.2rem}header .wrap{height:auto;padding:12px 22px;flex-wrap:wrap}}
